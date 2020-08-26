@@ -1,10 +1,113 @@
-
-main { border: 1px solid red;
-    max-width: 768px;
-    min-width: 320px;
+main {
+  border: 1px solid red;
+  font-family: Roboto;
+  max-width: 768px;
+  min-width: 320px;
+  margin: 0 auto;
 }
 
-.content-1 {
-    background-color: #E5E5E5;
-    color: #fff;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90px;
+  height: 100%;
+  background-color: #C4C4C4;
+  font-size: 24px;
+}
+header span {
+  position: relative;
+  top: -4px;
+}
+
+.boxWithText {
+  position: relative;
+}
+.boxWithText .text {
+  position: absolute;
+  bottom: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1vw;
+  margin: 1vw;
+}
+.grid > div {
+  font-family: Roboto;
+  font-size: 18.1121px;
+  padding: .5em;
+  color: #fff;
+  background-color: #A2A9B7;
+}
+.grid-inner-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+}
+.grid-inner-1 .box2 {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  grid-column-end: 3;
+  grid-row-end: 2;
+}
+.grid-inner-1 > div {
+  border: 1px solid green;
+}
+.grid-inner-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+}
+.grid-inner-3 > div {
+  border: 1px solid red;
+}
+.grid .box1 {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  text-align: center;
+}
+.grid-layout {
+  display: grid;
+  grid-template-areas: "item-1 item-3";
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 10px;
+  grid-auto-rows: minmax(242px, auto);
+  grid-auto-flow: row dense;
+  padding: 10px;
+}
+.grid-item {
+  padding: 1rem;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+  background-color: #E8EBED;
+}
+
+#item-1 {
+  grid-area: item-1;
+}
+
+#item-3 {
+  grid-area: item-3;
+}
+
+#item-31 {
+  background-color: #90BCE8;
+}
+
+#item-32 {
+  background-color: #FEBF26;
+}
+
+@media all and (max-width: 480px) {
+  .grid-layout {
+    grid-template-areas: "item-1" "item-3";
+    grid-template-columns: 1fr;
+  }
 }
