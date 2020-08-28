@@ -5,16 +5,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Новый дизайн Прораба</title>
-    <!-- link rel="icon" href="favicon.ico" type="image/x-icon" -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+    <title>Test nesting AGIMA</title>
     <link rel="stylesheet" href="style.css"   type="text/css">
-
   </head>
   <body>  
     <main>
         <header><span>header</span></header>
-        <div class="grid-layout-1">
+        <div class="grid-layout grid-layout-1">
             <div class="box1">
                 Гений непредвзято понимает под собой конфликт. Закон внешнего мира, очевидно, 
                 реально подчеркивает аксиоматичный здравый смысл. Культ джайнизма включает в 
@@ -25,22 +22,46 @@
             <div class="boxWithText"><span class="text">Морено</span></div>
          </div>  
          
-         <div class="grid-layout-2">
+         <div class="grid-layout grid-layout-2">
             <div class="grid-inner-1" id="item-1">
-                <div class="grid-item boxWithText" id="item-11"><span class="text">Наши сотрудники</span></div>
-                <div class="grid-item boxWithText" id="item-12"><span class="text">Просветляет понимающий тест</span></div>
-                <div class="grid-item box2 boxWithText" id="item-13"><span class="text">Конформизм</span></div>
+                <div class="grid-item boxWithText"><span class="text">Наши сотрудники</span></div>
+                <div class="grid-item boxWithText"><span class="text">Просветляет понимающий тест</span></div>
+                <div class="grid-item box2 boxWithText"><span class="text">Конформизм</span></div>
             </div>
             <div class="grid-inner-3" id="item-3">
-                <div class="grid-item boxWithText" id="item-31"><span class="text">Интроекция</span></div>
-                <div class="grid-item boxWithText" id="item-32"><span class="text">Наши сотрудники</span></div>
+                <div class="grid-item boxWithText BgColorBlue"><span class="text">Интроекция</span></div>
+                <div class="grid-item boxWithText BgColorYellow"><span class="text">Наши сотрудники</span></div>
+            </div>
+        </div>
+        
+        <div class="grid-layout grid-layout-3">
+            <div class="boxWithText"><span class="text">Понятие модернизации понимает механизм власти</span></div>
+            <div class="boxWithText boxWithImgBg"><span class="text">Наши сотрудники</span></div>
+            <div class="box1">
+                <div class="oglavl">
+                    <div><div><span>Фамилия</span></div><div><span>Мамай</span></div></div>
+                    <div><div><span>Имя и отчество</span></div><div><span>Станиславаленина<br>Владимировна</span></div></div>
+                    <div><div><span>Номер полиса выдан заведомо<br>ложный</span></div><div><span>01354879</span></div></span></div>
+                    <div><div><span>Дата рождения</span></div><div><span>01.12.1976</span></div></div>
+                    <div><div><span>Телефон</span></div><div><span>+79254218069</span></div></div>
+                </div>
+     
             </div>
         </div>
 
+        <div class="grid-layout grid-layout-4">
+            <div class="grid-inner-3" id="item-43">
+                <div class="grid-item boxWithText BgColorRose"><span class="text">Лидерство</span></div>
+                <div class="grid-item boxWithText BgColorPurple"><span class="text">Невероятный гений</span></div>
+            </div>
 
+            <div class="grid-inner-1" id="item-41">
+                <div class="grid-item box2 boxWithText BgColorRose"><span class="text">Однако</span></div>
+                <div class="grid-item boxWithText BgColorRose"><span class="text">Точка перегиба</span></div>
+                <div class="grid-item boxWithText BgColorViolet"><span class="text">Длина вектора</span></div>
+                
+            </div>
+        </div>       
+        <footer><span>footer</span></footer>
     </main>
-
-    <footer>
-
-    </footer>
 </html>
